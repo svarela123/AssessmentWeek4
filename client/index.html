@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Back End Assessment</title>
+  </head>
+  <body class="container">
+    <button id="complimentButton">Get a compliment</button>
+    <button id="fortuneButton">Open fortune cookie</button>
+    <button id="inspirationButton">Get inspired</button>
+    <button id="encouragementButton">Get inspired</button>
+
+    <main>
+
+      <form>
+          <input 
+              type='text'
+              id="title"
+              placeholder="Write goal here"/>
+          <input 
+              type='text'
+              id="img"
+              placeholder='Paste an image URL'/>
+          <section id="ratings-container">
+              <p>Rate the goal(1=High Priority 5=Low Priority):</p>
+              <div id="radio-container">
+                  <label for="one">
+                      <input
+                          type="radio"
+                          name="ratings"
+                          value="1"
+                          id="one"/>
+                      1
+                  </label>
+                  <label for="two">
+                      <input
+                          type="radio"
+                          name="ratings"
+                          value="2"
+                          id="two"/>
+                      2
+                  </label>
+                  <label for="three">
+                      <input
+                          type="radio"
+                          name="ratings"
+                          value="3"
+                          id="three"/>
+                      3
+                  </label>
+                  <label for="four">
+                      <input
+                          type="radio"
+                          name="ratings"
+                          value="4"
+                          id="four"/>
+                      4
+                  </label>
+                  <label for="five">
+                      <input
+                          type="radio"
+                          name="ratings"
+                          value="5"
+                          id="five"/>
+                      5
+                  </label>
+              </div>
+          </section>
+          <button>add goal</button>
+      </form>
+  
+      <section id="goals-container"></section>
+  
+      </main>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+    
+  </body>
+</html>
